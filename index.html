@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dreamspice - Front-End Beginner</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+<body>
+   <header>
+    <img class="header__logo" src="/images/logo.png" alt="dream logo" >
+
+        <navbar>
+
+            <button class="hamburger-btn" id="hamburger-btn"></button>
+ 
+        </navbar>
+
+   </header>
+
+   <main>
+
+    <div class="main-container">
+        <img class="main-container__avatar" src="/images/avatar.svg" alt="dreamspice logo" >
+        <h1 class="main-container__title">Hi i'm Maciek. Nice to meet you.</h1>
+    </div>
+
+    <div class="learning-container">
+        <h2 class="learning-container__title">Currently i'm learning:</h2>
+        <div class="learning-container__flex-center">
+
+            <div class="column">
+                <div class="container-for-logo-one">
+                <img class="tech-logo" src="/images/css.svg" alt="css logo">
+                </div>
+                <p class="column__item column__item--one">Animations</p>
+                <p class="column__item column__item--one">Creating websites from scratch</p>
+            </div>
+
+            <div class="column">
+                <div class="container-for-logo-two">
+                <img class="tech-logo" src="/images/js.svg" alt="js logo">
+                </div>
+                <p class="column__item column__item--two">Basic stuff</p>
+                <p class="column__item column__item--two">How to add interactive elements</p>
+            </div>     
+        </div>
+    </div>
+
+        <div class="resources-container">
+            <h3>My resources:</h3>
+            <div class="resources-grid-container">
+            <img class="resources-grid-container__item" src="/images/yt.svg">
+            <img class="resources-grid-container__item" src="/images/scrimba.svg">
+            <img class="resources-grid-container__item" src="/images/google.svg">
+            <img class="resources-grid-container__item" src="/images/mentor.svg">
+            </div>
+        </div>
+
+        <footer>
+                <h3>Contact</h3>
+            <form action="https://formsubmit.co/basicuser00@protonmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="name">
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="email">
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="message">
+                <textarea type="text" name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="button">
+                <button type="submit">Send</button>
+                </div>
+           </form>
+        </footer>
+
+
+
+
+
+
+   </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

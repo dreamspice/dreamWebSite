@@ -98,6 +98,7 @@ main .main-container {
           align-items: center;
   margin: 70px auto;
   width: 80%;
+  padding-bottom: 30px;
   min-height: 300px;
   background: #FBEF90;
   border-radius: 20px;
@@ -110,11 +111,17 @@ main .main-container__avatar {
 }
 
 main .main-container__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 300px;
   margin: 0px 20px;
   text-align: center;
+  min-width: 300px;
+}
+
+main .main-container__subtitle {
+  position: relative;
+  bottom: 30px;
 }
 
 .learning-container__title {
@@ -295,6 +302,7 @@ footer form button:hover {
   }
   main .main-container__title {
     top: 200px;
+    font-size: 2rem;
   }
   main .main-container__subtitle {
     font-size: 1.2rem;

@@ -80,8 +80,8 @@ nav .menu__item {
 .showMenu {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  padding: 100px 40px 0px 40px;
-  font-size: 1.8rem;
+  padding: 100px 0px 0px 40px;
+  font-size: 1.6rem;
   text-align: left;
 }
 

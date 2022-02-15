@@ -7,6 +7,7 @@
     <title>dreamspice - Front-End Beginner</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -20,11 +21,15 @@
            <img class="my-pages__item my-pages__item--second" onclick="openMentor()" src="/images/mentor-small.svg">
        </div>
 
-        <navbar>
+        <nav class="menu">
+            <li><a target="_blank" href="https://github.com/dreamspice" class="menu__item">GitHub</a></li>
+            <li><a target="_blank" href="https://www.frontendmentor.io/profile/dreamspice" class="menu__item">Front-end Mentor</a></li>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-btn">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
 
-            <button class="hamburger-btn" id="hamburger-btn"></button>
- 
-        </navbar>
+        </button>
 
    </header>
 

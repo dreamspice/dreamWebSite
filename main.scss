@@ -30,40 +30,62 @@ header {
     background: rgb(253,247,200);
     background: linear-gradient(90deg, rgba(253,247,200,1) 25%, rgba(251,239,144,1) 45%, rgba(247,223,30,1) 89%);
     padding: 25px 15px;
+    .my-pages {
+        display: none;
+    }
     .header__logo {
         width: 200px;
         height: auto;
     }
     .hamburger-btn {
-        display: block;
-        cursor: pointer;
-        position: relative;
-        top: 16px;
-        right: 15px;
-        width: 30px;
-        height: 35px;
-        border: none;
-        border-top: 2px solid $heading-color;
-        background: transparent;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            border-top: 2px solid $heading-color;
-            transform: translateY(8px);
-        }
-        &:after {
-            content: '';
-            position: absolute;
-            border-top: 2px solid $heading-color;
-            left: 0;
-            width: 100%;
-            transform: translateY(2px);
-        }
+            position: relative;
+            top: 5px;
+            right: 10px;
+            z-index: 100;
+            padding: 4px;
+            border: none;
+            transform: scale(1.5);
+            background: $js-yellow-color;
+            cursor: pointer;
+    }
+}
+
+.hamburger-btn {
+.closeIcon {
+    display: none;
 }
 }
+
+nav {
+    list-style-type: none;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: $js-yellow-color;
+    color: $paragraph-color;
+    padding-top: 4rem;
+    .menu__item {
+        text-decoration: none;
+        color: $paragraph-color;
+        line-height: 2;
+    }
+}
+
+
+
+.showMenu {
+    transform: translateY(0);
+    padding: 100px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+
 
 main {
     .main-container {
@@ -180,6 +202,9 @@ footer {
             text-transform: uppercase;
             font-weight: 700;
             margin-top: 10px;
+            &:hover {
+                background: #c2ad07;
+            }
     }
 }
 }
@@ -202,7 +227,7 @@ footer {
             justify-content: center;
             gap: 80px;
             position: relative;
-            top: -140px;
+            top: -550px;
             &__item {
                 cursor: pointer;
                 transform: scale(0.4);

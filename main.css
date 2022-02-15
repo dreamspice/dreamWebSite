@@ -26,43 +26,63 @@ header {
   padding: 25px 15px;
 }
 
+header .my-pages {
+  display: none;
+}
+
 header .header__logo {
   width: 200px;
   height: auto;
 }
 
 header .hamburger-btn {
-  display: block;
-  cursor: pointer;
   position: relative;
-  top: 16px;
-  right: 15px;
-  width: 30px;
-  height: 35px;
+  top: 5px;
+  right: 10px;
+  z-index: 100;
+  padding: 4px;
   border: none;
-  border-top: 2px solid #3D3D3D;
-  background: transparent;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background: #F7DF1E;
+  cursor: pointer;
 }
 
-header .hamburger-btn:before {
-  content: '';
-  position: absolute;
+.hamburger-btn .closeIcon {
+  display: none;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   top: 0;
   left: 0;
-  width: 100%;
-  border-top: 2px solid #3D3D3D;
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #F7DF1E;
+  color: #454545;
+  padding-top: 4rem;
 }
 
-header .hamburger-btn:after {
-  content: '';
-  position: absolute;
-  border-top: 2px solid #3D3D3D;
-  left: 0;
-  width: 100%;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+nav .menu__item {
+  text-decoration: none;
+  color: #454545;
+  line-height: 2;
+}
+
+.showMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding: 100px;
+  font-size: 2rem;
+  text-align: left;
 }
 
 main .main-container {
@@ -222,6 +242,10 @@ footer form button {
   margin-top: 10px;
 }
 
+footer form button:hover {
+  background: #c2ad07;
+}
+
 @media screen and (min-width: 1000px) {
   header {
     background: rgba(189, 189, 189, 0.8);
@@ -249,7 +273,7 @@ footer form button {
             justify-content: center;
     gap: 80px;
     position: relative;
-    top: -140px;
+    top: -550px;
   }
   header .my-pages__item {
     cursor: pointer;

@@ -223,6 +223,62 @@ footer form button {
 }
 
 @media screen and (min-width: 1000px) {
+  header {
+    background: rgba(189, 189, 189, 0.8);
+    position: fixed;
+    left: 0;
+    padding: 0 15px;
+    top: 0;
+    height: 100vh;
+    width: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .my-pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 80px;
+    position: relative;
+    top: -140px;
+  }
+  header .my-pages__item {
+    cursor: pointer;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  header .hamburger-btn {
+    display: none;
+  }
+  header .header__logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  main {
+    margin-left: 200px;
+  }
+  main .main-container__title {
+    top: 200px;
+  }
+  main .main-container__subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 30px;
+  }
   .learning-container__flex-center {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -250,6 +306,9 @@ footer form button {
   }
   .resources-container .resources-grid-container__item {
     width: 160px;
+  }
+  footer {
+    position: relative;
   }
 }
 /*# sourceMappingURL=main.css.map */

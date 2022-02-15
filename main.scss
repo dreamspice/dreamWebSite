@@ -187,6 +187,52 @@ footer {
 
 
 @media screen and (min-width: 1000px) {
+    header {
+        background: hsla(0, 0%, 74%, 0.8);
+        position: fixed;
+        left: 0;
+        padding: 0 15px;
+        top: 0;
+        height: 100vh;
+        width: 10%;
+        flex-direction: column;
+        .my-pages {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 80px;
+            position: relative;
+            top: -140px;
+            &__item {
+                cursor: pointer;
+                transform: scale(0.4);
+            }
+        }
+        .hamburger-btn {
+            display: none;
+        }
+        .header__logo {
+            transform: scale(1);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+    }
+    main {
+        margin-left: 200px;
+    .main-container {
+        &__title {
+            top: 200px;
+        }
+        &__subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+}
     .learning-container {
     
         &__flex-center {
@@ -210,5 +256,8 @@ footer {
             width: 160px;
         }
     }
+    }
+    footer {
+        position: relative;
     }   
 }
